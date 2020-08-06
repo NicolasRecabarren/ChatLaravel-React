@@ -65,21 +65,21 @@
         </style>
     </head>
     <body>
-        <div class="content">
-            <nav class="navbar navbar-light bg-primary">
+        <div class="content h-100">
+            <nav class="navbar navbar-light bg-primary position-absolute w-100" style="z-index: 10;">
                 <span class="navbar-brand mb-0 h1 text-light">Chat | Nicolás Recabarren Valderrama</span>
             </nav>
-            <div id="chat-box" class="container card p-0" style="min-height: 300px;">
+            <div class="container h-100" style="padding-top: 55px;">
+                <div id="chat-box" class="card p-0 h-100" style="min-height: 300px;">
 
-                <div id="chat" class="card-body" style="max-height: 250px; overflow-y: auto;">
-                </div>
+                    <div id="chat" class="card-body h-100" style="overflow-y: auto;">
+                    </div>
 
-                <div id="chat-form" class="card-footer">
-                    
+                    <div id="chat-form" class="card-footer">
+                        
+                    </div>
                 </div>
             </div>
-
-            <div id="example"></div>
         </div>
     </body>
 

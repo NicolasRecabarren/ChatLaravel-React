@@ -17,8 +17,10 @@ use App\Events\NewChatMessage;
 
 Route::post('/messages', function (Request $request) {
 
+    // Disparamos el evento que creará el mensaje y hará que se refresque el websocket.
     event(new NewChatMessage($request->input('message'),$request->input('author')));
 
+    // Solo a modo de prueba devolveremos el mensaje que nos han enviado en el formulario.
     return response()->json([
         'message' => $request->input('message'),
         'author' => $request->input('author')
