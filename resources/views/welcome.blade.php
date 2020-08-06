@@ -66,7 +66,7 @@
     </head>
     <body>
         <div class="content h-100">
-            <nav class="navbar navbar-light bg-primary position-absolute w-100" style="z-index: 10;">
+            <nav class="navbar navbar-light bg-primary position-absolute w-100" style="z-index: 10; top: 0;">
                 <span class="navbar-brand mb-0 h1 text-light">Chat | Nicolás Recabarren Valderrama</span>
             </nav>
             <div class="container h-100" style="padding-top: 53px;">
