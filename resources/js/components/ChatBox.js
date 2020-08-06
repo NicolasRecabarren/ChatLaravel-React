@@ -26,14 +26,27 @@ class ChatBox extends Component{
                 var author    = document.createElement('span');
                 var message   = document.createElement('span');
                 var paragraph = document.createElement('p');
+                var dateSpan  = document.createElement('span');
+                var sendedDate = new Date();
+
+                var sendedDateFormatted = 'Enviado a las ' + sendedDate.getHours() + ':';
+                if(sendedDate.getMinutes() < 10){
+                    sendedDateFormatted += '0' + sendedDate.getMinutes();
+                } else {
+                    sendedDateFormatted += sendedDate.getMinutes();
+                }
 
                 author.appendChild(document.createTextNode(e.author+': '))
                 message.appendChild(document.createTextNode(e.message));
+                dateSpan.appendChild(document.createTextNode(sendedDateFormatted));
+
                 paragraph.appendChild(author)
                 paragraph.appendChild(message);
+                paragraph.appendChild(dateSpan);
 
                 author.setAttribute('class', 'font-weight-bold');
                 paragraph.setAttribute('class', 'text-left');
+                dateSpan.setAttribute('class','sended-date');
 
                 document.getElementById('chat').appendChild(paragraph);
             }

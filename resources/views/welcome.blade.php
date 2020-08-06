@@ -62,6 +62,24 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            #chat p.text-left{
+                margin-bottom: 5px;
+                padding: 4px 120px 4px 6px;
+                border-radius: 7px;
+                position: relative;
+            }
+
+            #chat p.text-left:hover{
+                background-color: #f3f3f3;
+            }
+
+            #chat p.text-left .sended-date{
+                position: absolute;
+                right: 10px;
+                top: 7px;
+                font-size: 12px;
+            }
         </style>
     </head>
     <body>

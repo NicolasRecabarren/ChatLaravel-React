@@ -71,6 +71,13 @@ class ChatForm extends Component{
                         message: ''
                     }
                 });
+
+                // Cuando se llena el div de los mensajes moveremos el scroll hasta el último mensaje automáticamente.
+                const chat = document.getElementById('chat');
+                var shouldScroll = chat.scrollTop + chat.clientHeight === chat.scrollHeight;
+                if (!shouldScroll) {
+                    chat.scrollTop = chat.scrollHeight;
+                }
             })
             .catch((error) => {
                 console.log(error);
