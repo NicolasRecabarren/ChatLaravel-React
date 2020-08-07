@@ -49,6 +49,13 @@ class ChatBox extends Component{
                 dateSpan.setAttribute('class','sended-date');
 
                 document.getElementById('chat').appendChild(paragraph);
+
+                // Cuando se llena el div de los mensajes moveremos el scroll hasta el último mensaje automáticamente.
+                const chat = document.getElementById('chat');
+                var shouldScroll = chat.scrollTop + chat.clientHeight === chat.scrollHeight;
+                if (!shouldScroll) {
+                    chat.scrollTop = chat.scrollHeight;
+                }
             }
         });
     }
