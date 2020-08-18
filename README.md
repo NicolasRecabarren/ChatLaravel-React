@@ -1,3 +1,14 @@
+# Chat
+- El objetivo de este proyecto es generar un chat público en <b>tiempo real</b>, en donde los usuarios pueden acceder y comunicarse entre ellos escogiendo su nickname y enviando mensajes de texto.
+
+## Tecnologías utilizadas
+- PHP versión 7
+- Framework Laravel
+- ReactJS
+- Pusher-js
+- Bootstrap 4
+- jQuery
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
